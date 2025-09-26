@@ -1,0 +1,179 @@
+
+.contact{
+    background-color: #f6f3ef;
+    padding: 2rem;
+}
+.contact_li li a{
+    color: rgb(89,133,200);
+}
+.contact h1{
+    font-weight: 700;
+    color: rgb(89,133,200);
+}
+.contact a{
+    color: #767676;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.125s linear;
+}
+.contact a:hover{
+    color: #333;
+}
+.contact p{
+    color: #333;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+.contact span{
+    color: #767676;
+}
+.contact_sec{
+    display: flex;
+    gap: 30px;
+    background-color: #f6f3ef;
+    padding: 0 1rem;
+    padding-bottom: 4rem;
+}
+.contacts{
+    width: 80%;
+}
+.contact_img img{
+    width: 99%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.contacts_details .address{
+    color: #5985c8;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contacts_details .contact_p_1 {
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.contacts_details .contact_p_2{
+    color: #777777;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+}
+.phone_email{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.phone_email .phone span{
+    color: #5985c8;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.phone_email .phone p{
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    padding-top: 0.7rem;
+}
+.phone_email .email span{
+    color: #5985c8;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.phone_email .email p{
+    color: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    padding-top: 0.7rem;
+}
+.name_email{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+label{
+    display: block;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+
+}
+.name_email input{
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+.text_box{
+    padding-top: 2rem;
+}
+.text_box input{
+    width: 100%;
+    height: 30vh;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+form button{
+    color: white;
+    background-color: #5985c8;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 1.2rem;
+    margin-top: 1.5rem;
+    transition: all 0.125s linear;
+}
+form button:hover{
+    background-color: rgb(81, 121, 182);
+}
+textarea{
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 30vh;
+}
+@media (max-width: 1023px) {
+    .contact_sec{
+        display: block;
+    }
+}
+@media (max-width: 573px) {
+    .name_email{
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .phone_email{
+        display: block;
+    }
+}
+@media (max-width: 295px) {
+    .contacts_details span{
+        font-size: smaller;
+        width: 100%;
+    }
+    .contacts_details .contact_p_1 p{
+        font-size: smaller;
+        width: 100%;
+    }
+    .email p{
+        font-weight: 100;
+        font-size: xx-small;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .name_inp input{
+        width: 100%;
+    }
+    .mail_inp input{
+        width: 100%;
+    }
+
+}

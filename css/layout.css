@@ -1,0 +1,276 @@
+
+.marquee_1{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+}
+.marquee_1 marquee span{
+    padding: 4rem;
+    position: relative;
+}
+.marquee_p marquee span::before{
+    content:"";
+    width: 10px;
+    height: 10px;
+    border: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.dot{
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+header{
+    z-index: 999;
+    position: sticky;
+    top: 0rem;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding:1.5rem 1rem 1.125rem 0rem;
+    background-color: #f6f3ef;
+    border-bottom: 2px solid rgba(89, 133, 200, 1);
+}
+.site_list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 7px;
+}
+.site_list li a{
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+}
+.a_i_basic a{
+    text-decoration: none;
+}
+.site_list li a:hover{
+color: rgb(89,133,200);
+}
+.bar{
+    font-size: 1.2rem;
+    margin: auto 0;
+}
+.farm_logo{
+    margin-right: 7rem;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.a_i_basic{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 1rem;
+    margin-bottom: 5px;
+
+}
+.a_i_basic a{
+    color: #333;
+    font-weight: 500;
+}
+.a_i_basic a:hover{
+color: rgb(51 51 51 / 60%);
+}
+.heart_icon{
+    cursor: pointer;
+    color: #333;
+}
+.heart_icon:hover{
+color: rgb(51 51 51 / 60%);
+}
+.shopping_icon{
+    cursor: pointer;
+    color: #333;
+}
+.shopping_icon:hover{
+color: rgb(51 51 51 / 60%);
+}
+footer{
+    background-color: rgb(89, 133, 200);
+    position: relative;
+}
+.join{
+    padding: 2rem 1.5rem;
+}
+.join h1{
+    padding-top: 2rem;
+    color: white;
+    width: 30%;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.df_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.catigories{
+    display: flex;
+    gap: 30px;
+}
+.catigorie_a_img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.catigorie_a_img a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.1s linear;
+}
+.catigorie_a_img a:hover{
+    color: #e8e8e8;
+}
+.catigorie_a_img img{
+    color: white;
+    font-size: 1.5rem;
+}
+.line{
+    margin-right: 1.3rem;
+    background-color: white;
+    height: 0.3vh;
+    width: 60%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-2rem);
+    border-radius: 20px;
+}
+.footer_logo img{
+    width: 100%;
+    padding: 4rem 1.5rem 0 1.5rem;
+
+}
+.join_icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 1.3rem;
+}
+.fa-facebook-f{
+    color: white;
+    font-size: 1.3rem;
+}
+.face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34508d;
+    opacity: 90%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.1s linear;
+}
+.face:hover{
+    background-color: #2a4379;
+}
+.fa-x-twitter{
+    color: white;
+    font-size: 1.3rem;
+}
+.twit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 90%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.fa-instagram{
+    color: white;
+    font-size: 1.3rem;
+}
+.insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #774430;
+    opacity: 90%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.1s linear;
+}
+.insta:hover{
+    background-color: #623827;
+}
+.join_icons a{
+    text-decoration: none;
+}
+.bar{
+    display: none;
+}
+@media (max-width: 910px) {
+    .site_list{
+    display: none;
+    }
+    .a_i_basic{
+        display: none;
+    }
+    nav{
+        padding: 0 1rem;
+        justify-content: space-between;
+        margin: auto;
+        padding: 1.5rem;
+    }
+    .bar{
+        display: block;
+    }
+    .farm_logo{
+        order: 4;
+        margin: 0;
+    }
+}
+@media (max-width: 1102px) {
+    .definitions{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    
+}
+@media (max-width: 881px) {
+    .df_footer{
+        display: block;
+    }
+    .join_icons{
+        margin-bottom: 1rem;
+    }
+    .line{
+        width: 95%;
+    }
+}
+@media (max-width: 625px) {
+    .catigories{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 267px) {
+    .join h1{
+        font-size: x-large;
+    }
+}
+@media (max-width: 197px) {
+    .join_icons{
+        flex-wrap: wrap;
+    }
+    .join h1{
+        font-size: medium;
+        flex-wrap: wrap;
+    }
+
+}
+
