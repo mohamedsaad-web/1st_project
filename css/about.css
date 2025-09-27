@@ -1,3 +1,46 @@
+body{
+  transition: background-color 0.3s ,color 0.5s;
+}
+body.light{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: #3b2f2f;
+}
+body.light nav{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: #443b3b;
+}
+body.light nav{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: #443b3b;
+}
+body.light .experience{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: #443b3b;
+}
+body.light section{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: #443b3b;
+}
+body.dark{
+  background-color: #3b2f2f;
+  color: rgba(234, 229, 221, 0.24);
+}
+body.dark nav{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: rgba(234, 229, 221, 0.24);
+}
+body.dark nav{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: rgba(234, 229, 221, 0.24);
+}
+body.dark .experience{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: rgba(234, 229, 221, 0.24);
+}
+body.dark section{
+  background-color: rgba(220, 204, 179, 0.24);
+  color: rgba(234, 229, 221, 0.24);
+}
 .about_li li a{
     color: rgb(89,133,200);
 }
