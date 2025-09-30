@@ -1,5 +1,6 @@
 body{
   transition: background-color 0.3s ,color 0.5s;
+  
 }
 body.light{
   background-color: rgba(220, 204, 179, 0.24);
@@ -26,6 +27,34 @@ body.dark section{
   color: rgba(234, 229, 221, 0.24);
 }
 
+
+
+
+
+
+#backToTop{
+visibility: hidden;
+opacity: 0;
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.363);
+color: #524848;
+border-color: #5c515120;
+transition: background-color 0.125s, opacity 0.4s ease, visibility 0.4s ease;
+}
+#backToTop:hover{
+  background-color: #f7f5f5;
+}
+#backToTop.show{
+  opacity: 1;
+  visibility: visible;
+}
+
+
 .home_li li a {
   color: rgb(89, 133, 200);
 }
@@ -48,14 +77,17 @@ body.dark section{
   text-align: center;
   background-color: rgba(220, 204, 179, 0.24);
 }
-.hero_section p {
+#pEffect{
   width: 70%;
   font-size: 4.5rem;
   font-weight: bold;
   margin: 0 auto 1.5rem auto;
   padding-top: 4rem;
   line-height: 1.2;
+  overflow: hidden;
+  display: inline-block;
 }
+
 .hero_btns {
   padding-bottom: 17.5rem;
   display: flex;

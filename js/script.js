@@ -32,6 +32,42 @@ new Swiper(".wrapper", {
     },
   });
 
+  const btnToTop = document.querySelector("#backToTop")
+  
+  const showAfter=300
+
+  window.addEventListener("scroll",()=>{
+    if(scrollY>showAfter){
+      btnToTop.classList.add("show")
+    }
+    else{
+      btnToTop.classList.remove("show")
+    }
+  }
+  
+)
+btnToTop.addEventListener("click",()=>{
+
+  scrollTo({top:0,behavior:"smooth"})
+
+})
+
+
+const text="The Highest Quality Products From a Organic Dairy Farm"
+const pEffect = document.querySelector("#pEffect")
+let i = 0
+
+function typeWriter(){
+
+  if(i < text.length){
+    
+    pEffect.innerHTML += text.charAt(i)
+    i++
+    setTimeout(typeWriter,100)
+  }
+  window.onload = typeWriter
+
+}
 
 const selectThemColors = document.querySelector("#themcolor");
 selectThemColors.addEventListener("change",()=>
